@@ -1,4 +1,4 @@
 addons:
 - name: vpc-cni
-  # renovate: eksAddonsFilter={"addonName":"v1.18.5-eksbuild.1"}
+  # renovate: eksAddonsFilter={"addonName":"vpc-cni"}
   version: v1.18.5-eksbuild.1
