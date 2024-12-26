@@ -1,0 +1,4 @@
+addons:
+- name: addon-not-exist
+  # renovate: eksAddonsFilter={"addonName":"addon-not-exist"}
+  version: v1.18.5-eksbuild.1
