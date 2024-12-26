@@ -3,7 +3,8 @@
 ---
 
 - [Issue 29613](https://github.com/renovatebot/renovate/issues/23410)
-- [Pull request](https://github.com/renovatebot/renovate/pull/29613)
+- [Original request](https://github.com/renovatebot/renovate/pull/29613)
+- [My pull request](https://github.com/renovatebot/renovate/pull/33272)
 
 ---
 
