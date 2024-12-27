@@ -18,7 +18,6 @@ module.exports = {
   "packageRules": [
     {
       "matchDatasources": ["aws-eks-addon"],
-      // "ignoreUnstable": false
     }
   ],
   "customManagers": [
@@ -29,7 +28,15 @@ module.exports = {
         ".*# renovate: eksAddonsFilter=(?<packageName>.*?)\n.*?[a-zA-Z0-9-_:]*[ ]*?[:|=][ ]*?[\"|']?(?<currentValue>[a-zA-Z0-9-_.]+)[\"|']?.*"
       ],
       "datasourceTemplate": "aws-eks-addon",
-      "versioningTemplate": "semver"
+      // "versioningTemplate": "aws-eks-addon"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": [".*\\.yaml"],
+      "matchStrings": [
+        ".*# renovate: eksAddonsFilter=(?<packageName>.*?)\n.*?[a-zA-Z0-9-_:]*[ ]*?[:|=][ ]*?[\"|']?(?<currentValue>[a-zA-Z0-9-_.]+)[\"|']?.*"
+      ],
+      "datasourceTemplate": "aws-eks-addon",
     }
   ]
 }
