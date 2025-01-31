@@ -7,7 +7,7 @@ RENOVATE_CONFIG_FILE=$PWD/config.js
 cleanup()
 {
   echo "Removing temporary files:"
-  rm -rf "$RENOVATE_CONFIG_FILE"
+  rm -rf "$RENOVATE_REPO_PATH/config.js"
   exit
 }
 

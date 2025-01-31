@@ -1,0 +1,7 @@
+addons:
+- name: kube-proxy-1-27
+  # renovate: eksAddonsFilter={"addonName":"kube-proxy", "default":true, "kubernetesVersion":"1.27"}
+  version: v1.27.12-eksbuild.2
+- name: kube-proxy-1-30
+  # renovate: eksAddonsFilter={"addonName":"kube-proxy", "default":true, "kubernetesVersion":"1.30"}
+  version: v1.27.12-eksbuild.2

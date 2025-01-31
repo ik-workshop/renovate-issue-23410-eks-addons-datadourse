@@ -19,7 +19,10 @@
 ### Commands
 
 ```
-❯ aws eks describe-addon-versions --addon-name vpc-cni
+> aws eks describe-addon-versions --addon-name vpc-cni
+> aws eks describe-addon-versions --addon-name vpc-cni | grep 1.19
+> aws eks describe-addon-configuration --addon-name vpc-cni --addon-version 1.19.2
+> aws eks describe-addon-versions --kubernetes-version "1.30" --addon-name kube-proxy --query 'addons[].addonVersions[].{AddonVersion:addonVersion, ClusterVersion:compatibilities[0].clusterVersion, DefaultVersion:compatibilities[0].defaultVersion}' --output table
 
 ```
 
