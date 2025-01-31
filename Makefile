@@ -10,9 +10,12 @@ LOG_LEVEL := debug
 help:
 	@grep -E '^[a-zA-Z0-9_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
-run: ## Nothing to RUN yet
+run-docker: ## Run a docker image
 	@docker run --rm -it \
 		-e RENOVATE_TOKEN \
 		-e LOG_LEVEL=$(LOG_LEVEL) \
 		-v ${PWD}/config.js:/usr/src/app/config.js \
 		$(CI_RENOVATE_IMAGE) renovate --dry-run=false
+
+run: ## Run sources
+	@./run.sh
