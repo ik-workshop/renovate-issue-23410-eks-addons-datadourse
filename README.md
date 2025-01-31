@@ -18,6 +18,11 @@
 
 ### Commands
 
+```
+❯ aws eks describe-addon-versions --addon-name vpc-cni
+
+```
+
 ### Renovate Docs
 
 - [Example Exercises](./examples)
